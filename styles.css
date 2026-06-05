@@ -424,10 +424,23 @@ section h2 {
     background: var(--color-off-white);
 }
 
+.founder-image {
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--color-off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .founder-image img {
     width: 100%;
-    height: 650px;
-    object-fit: cover;
+    max-width: 100%;
+    height: 650px; /* desktop visual maintained */
+    object-fit: cover; /* fills container on desktop */
+    object-position: center center;
+    display: block;
 }
 
 .founder-content h2 {
@@ -945,5 +958,74 @@ section h2 {
     }
     .menu-toggle.active .bar:nth-child(2) {
         transform: translateY(-3.5px) rotate(-45deg);
+    }
+}
+
+/* Additional mobile image responsiveness and refinements */
+@media (max-width: 768px) {
+    /* Founder image: keep image fully visible and centered on small screens */
+    .founder-image {
+        padding: 8px; /* small breathing space inside the card */
+    }
+    .founder-image img {
+        width: 100%;
+        height: auto; /* allow image to scale proportionally */
+        max-height: 560px; /* prevents overly tall images while remaining proportional */
+        object-fit: contain; /* ensure full photo is visible without cropping */
+        object-position: center center;
+        display: block;
+        border-radius: 12px;
+        background: transparent;
+    }
+
+    /* Project/gallery cards: stop forcing a fixed aspect on very small screens so images can scale */
+    .project-img-wrapper {
+        aspect-ratio: auto;
+    }
+    .project-img-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    /* Reduce gaps and avoid overflow */
+    .project-grid {
+        gap: 18px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .founder-image img {
+        max-height: 460px;
+        padding: 6px 0;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .founder-image img {
+        max-height: 380px;
+    }
+    .brand-logo {
+        height: 54px;
+    }
+}
+
+@media (max-width: 320px) {
+    .founder-image img {
+        max-height: 320px;
+    }
+    section {
+        padding: 48px 0;
     }
 }
