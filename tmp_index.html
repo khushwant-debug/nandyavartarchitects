@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandyavart Architects | Designing Thoughtful Spaces</title>
+    <meta name="description" content="Architecture and Interior Design that balances beauty, functionality, and purpose.">
+    <link rel="icon" href="../images/favicon%20img/favicon.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="../images/favicon%20img/favicon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- EmailJS CDN (required for contact form sending) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+                    <img src="../images/logo/logo.png" alt="Nandyavart Architects Logo" class="brand-logo">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact" class="btn-outline-small">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-image" style="background-image: url('../images/hero/hero-image.jpeg');"></div>
+        <div class="hero-content fade-up">
+            <h1>Architecture in Rhythm with Nature</h1>
+            <p>Architecture and Interior Design that balances beauty, functionality, and purpose.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Schedule Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2>Design that feels natural—inside and out.</h2>
+                    <p>We shape spaces around how you live: the way light moves, how rooms connect, and how materials age gracefully over time. Our approach blends architectural precision with refined interior sensibility.</p>
+                    <ul class="highlights">
+                        <li>
+                            <strong>Design Philosophy</strong>
+                            <span>Minimalist yet warm, structural yet fluid.</span>
+                        </li>
+                        <li>
+                            <strong>Attention to Detail</strong>
+                            <span>Every material and junction is carefully considered.</span>
+                        </li>
+                        <li>
+                            <strong>Client-Centric Approach</strong>
+                            <span>Your vision, refined and realized through our expertise.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image fade-up delay-1">
+                    <img src="../images/founder/our-story-img.jpeg" alt="Minimalist interior space">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder & Principal Architect Section -->
+    <section class="founder-section" id="founder">
+        <div class="container">
+            <div class="founder-layout">
+                <div class="founder-image fade-in">
+                    <img src="../images/founder/founder-img.jpeg" alt="Founder & Principal Architect Kashish Jain">
+                </div>
+                <div class="founder-content fade-in delay-1">
+                    <span class="founder-subtitle">Meet The Founder</span>
+                    <h2>Kashish Jain</h2>
+                    <p><strong>Founder &amp; Lead Architect</strong></p>
+
+                    <p>
+                        Kashish Jain founded Nandyavart Architects with a vision to create spaces that are timeless, functional,
+                        and deeply connected to the people who use them. With a strong focus on thoughtful design, attention to detail,
+                        and practical execution, the studio delivers architecture and interiors that balance aesthetics with everyday living.
+                    </p>
+
+                    <p>
+                        Her design philosophy centers around creating meaningful spaces that enhance experiences, maximize functionality,
+                        and stand the test of time.
+                    </p>
+
+                    <div class="founder-metrics">
+                        <div class="metric fade-in">
+                            <div class="metric-value" data-editable="years-experience">10+</div>
+                            <div class="metric-label">Years of Experience</div>
+                        </div>
+                        <div class="metric fade-in delay-1">
+                            <div class="metric-value" data-editable="projects-completed">35+</div>
+                            <div class="metric-label">Projects Completed</div>
+                        </div>
+                        <div class="metric fade-in delay-2">
+                            <div class="metric-value" data-editable="client-satisfaction">98%</div>
+                            <div class="metric-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+
+                    <div class="founder-quote fade-in">
+                        <blockquote>
+                            “Great architecture is not just about buildings. It is about creating spaces that improve the way people live, work, and connect.”
+                        </blockquote>
+                        <cite>&mdash; Kashish Jain</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services bg-light" id="services">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <span class="section-subtitle">What We Do</span>
+                <h2>Our Expertise</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <h3>Architecture Design</h3>
+                    <p>Comprehensive architectural solutions from concept to creation, focused on form, light, and context.</p>
+                </div>
+                <div class="service-card fade-up delay-1">
+                    <h3>Interior Design</h3>
+                    <p>Curated interior spaces that evoke calm and sophistication through balanced materiality.</p>
+                </div>
+                <div class="service-card fade-up delay-2">
+                    <h3>Residential Projects</h3>
+                    <p>Bespoke homes and private villas designed for modern living and comfort.</p>
+                </div>
+                <div class="service-card fade-up">
+                    <h3>Commercial Projects</h3>
+                    <p>Workspaces, retail, and hospitality environments that elevate brand identity.</p>
+                </div>
+                <div class="service-card fade-up delay-1">
+                    <h3>Renovation</h3>
+                    <p>Thoughtful restoration and transformation of existing structures.</p>
+                </div>
+                <div class="service-card fade-up delay-2">
+                    <h3>Turnkey Solutions</h3>
+                    <p>End-to-end execution ensuring the original design vision is perfectly realized.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container-fluid">
+            <div class="section-header fade-up container">
+                <span class="section-subtitle">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="project-grid">
+                <a href="project-amaltas-aravali.html" class="project-card fade-up">
+                    <div class="project-img-wrapper">
+                        <img src="../images/projects/project1/amaltas-aravali.jpeg" alt="Amaltas Aravali">
+                    </div>
+                    <div class="project-info">
+                        <h3>Amaltas Aravali</h3>
+                        <p>Residential &middot; Commercial Development</p>
+                    </div>
+                </a>
+                <a href="project-sainik-farm-villa.html" class="project-card fade-up delay-1">
+
+                    <div class="project-img-wrapper">
+                        <img src="../images/projects/project2/sainik-farm-hero.jpeg" alt="Sainik Farm Villa">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sainik Farm Villa</h3>
+                        <p>Luxury Residential Villa</p>
+                    </div>
+                </a>
+                <a href="project-sultanpur-farm.html" class="project-card fade-up delay-2">
+
+                    <div class="project-img-wrapper">
+                        <img src="../images/projects/project3/project3-img8.jpg" alt="Sultanpur Farm">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sultanpur Farm</h3>
+                        <p>Sultanpur, New Delhi &middot; Luxury Farmhouse</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section class="process bg-light" id="process">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <span class="section-subtitle">How We Work</span>
+                <h2>Design Process</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step fade-up">
+                    <div class="step-num">01</div>
+                    <h3>Consultation</h3>
+                    <p>Understanding your vision, requirements, and the essence of the project.</p>
+                </div>
+                <div class="step fade-up delay-1">
+                    <div class="step-num">02</div>
+                    <h3>Planning</h3>
+                    <p>Spatial analysis, layout development, and structural feasibility.</p>
+                </div>
+                <div class="step fade-up delay-2">
+                    <div class="step-num">03</div>
+                    <h3>Design</h3>
+                    <p>Detailed architectural drawings, 3D visualizations, and material selection.</p>
+                </div>
+                <div class="step fade-up delay-3">
+                    <div class="step-num">04</div>
+                    <h3>Execution</h3>
+                    <p>Precise construction and installation with continuous site supervision.</p>
+                </div>
+                <div class="step fade-up delay-4">
+                    <div class="step-num">05</div>
+                    <h3>Delivery</h3>
+                    <p>Final handover of your completed, meticulously crafted space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonial-slider fade-up">
+                <div class="testimonial-slide active">
+                    <blockquote>"Nandyavart Architects transformed our house into a sanctuary. Their understanding of light and space is truly exceptional."</blockquote>
+                    <cite>&mdash; Sarah & James Thompson</cite>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote>"Professional, visionary, and incredibly attentive to detail. Our corporate office now perfectly reflects our brand ethos."</blockquote>
+                    <cite>&mdash; Marcus Lin, CEO</cite>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn" aria-label="Previous testimonial">&larr;</button>
+                    <button class="next-btn" aria-label="Next testimonial">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2>Start a Conversation</h2>
+                    <p>Whether you have a specific project in mind or simply want to explore possibilities, we would love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <strong>Phone</strong>
+                            <p><a href="tel:+19999999213" class="contact-phone" data-phone="9999999213">+19 9999999213</a></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Email</strong>
+                            <p><a href="mailto:NandyavartArchitects@gmail.com">NandyavartArchitects@gmail.com</a></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location</strong>
+                            <p>Chhatarpur, MG Road, Mehrauli Gurgaon Road, Delhi-110030</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-up delay-1">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry-type" required>
+                                <option value="" disabled selected>Type of Inquiry</option>
+                                <option value="architecture">Architecture</option>
+                                <option value="interior">Interior Design</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo-link"><img src="../images/logo/logo-footer.png" alt="Nandyavart Architects Footer Logo" class="brand-logo footer-logo"></a>
+                    <p>Designing spaces that inspire, function, and endure.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/nandyavartarchitects/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/124223921/admin/dashboard/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://www.pinterest.com/nandyavartarchitects/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                        <li><a href="https://www.justdial.com/Delhi/Nandyavart-Architects-Chhatarpur-Mehrauli-Gurgaon-Road/011PXX11-XX11-260318134311-F3C1_BZDET?auto=1&trkid=2315396980&term=" target="_blank" rel="noopener noreferrer">Justdial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nandyavart Architects. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
