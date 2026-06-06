@@ -382,17 +382,46 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.project-img-wrapper img {
+.project-img-wrapper {
+    /* Fixed container size to keep cards perfectly aligned */
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    object-position: center center;
-    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    height: 260px;
 }
 
-.project-card:hover .project-img-wrapper img {
-    transform: scale(1.05);
+/* Homepage Featured Projects (premium layout) */
+#projects .project-img-wrapper {
+    height: 720px;
+}
+
+#projects .project-img-wrapper img {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    margin: -10px 0 0 -10px;
+    object-fit: contain;
+    object-position: center center;
+    background: var(--color-off-white);
+}
+
+/* Project Gallery images inside project detail pages */
+#project-gallery .project-img-wrapper {
+    height: 260px;
+}
+
+
+
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    transition: none;
+}
+
+/* Keep hover premium effect only on featured projects, not gallery */
+#projects .project-card:hover .project-img-wrapper img {
+    transform: none;
 }
 
 .project-info h3 {
@@ -960,6 +989,7 @@ section h2 {
 /* Additional mobile image responsiveness and refinements */
 @media (max-width: 768px) {
     /* Founder image: keep image fully visible and centered on small screens */
+
     .founder-image {
         padding: 8px; /* small breathing space inside the card */
     }
@@ -974,16 +1004,23 @@ section h2 {
         background: transparent;
     }
 
-    /* Project/gallery cards: stop forcing a fixed aspect on very small screens so images can scale */
-    .project-img-wrapper {
-        aspect-ratio: auto;
+    /* Project/gallery cards: keep fixed image sizes but remain responsive */
+    #projects .project-img-wrapper {
+        height: 330px;
     }
+
+    #project-gallery .project-img-wrapper {
+        height: 220px;
+    }
+
     .project-img-wrapper img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: contain;
         object-position: center center;
     }
+
+
 
     /* Reduce gaps and avoid overflow */
     .project-grid {
