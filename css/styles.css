@@ -390,7 +390,7 @@ section h2 {
 
 /* Homepage Featured Projects (premium layout) */
 #projects .project-img-wrapper {
-    height: 720px;
+    height: 520px;
 }
 
 #projects .project-img-wrapper img {
@@ -399,7 +399,7 @@ section h2 {
     margin: -10px 0 0 -10px;
     object-fit: contain;
     object-position: center center;
-    background: var(--color-off-white);
+    background: var(white);
 }
 
 /* Project Gallery images inside project detail pages */
