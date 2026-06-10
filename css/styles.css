@@ -455,22 +455,30 @@ section h2 {
 
 .founder-image {
     border: 1px solid var(--color-border);
-    border-radius: 16px;
     overflow: hidden;
     background: var(--color-off-white);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* circle photo */
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
+
 
 .founder-image img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: contain;
-    object-position: center center;
+
+    /* Crop from the bottom / “zoom” look */
+    object-fit: cover;
+    object-position: center top;
 }
+
 
 .founder-content h2 {
     font-size: 3rem;
@@ -991,16 +999,19 @@ section h2 {
     .founder-image {
         padding: 8px; /* small breathing space inside the card */
     }
+
     .founder-image img {
         width: 100%;
-        height: auto; /* allow image to scale proportionally */
-        max-height: 560px; /* prevents overly tall images while remaining proportional */
-        object-fit: contain; /* ensure full photo is visible without cropping */
-        object-position: center center;
+        height: 100%;
+
+        max-height: none;
+        object-fit: cover;
+        object-position: center top;
         display: block;
-        border-radius: 12px;
+        border-radius: 50%;
         background: transparent;
     }
+
 
     /* Project/gallery cards: keep fixed image sizes but remain responsive */
     #projects .project-img-wrapper {
