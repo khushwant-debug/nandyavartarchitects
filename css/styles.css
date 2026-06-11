@@ -291,8 +291,9 @@ section h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: center;
+    align-items: stretch;
 }
+
 
 .about-text h2 {
     margin-bottom: 30px;
@@ -329,10 +330,16 @@ section h2 {
 
 .about-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 }
+
+/* Make About section image height match the About text column */
+.about-image {
+    height: 100%;
+}
+
 
 /* Services Section */
 .services-grid {
